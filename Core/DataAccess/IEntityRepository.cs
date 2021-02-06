@@ -1,12 +1,13 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace DataAccess.Abstract
+namespace Core.DataAccess
 {
     // whereden sonra T bir class ve entity implemente eden bir nesne ise diye filtrelendi
+    //class : Referans Tip
     //T: class,IEntity,new()  Tbir class olacak , t bir entity olacak ,
     public interface IEntityRepository<T> where T: class,IEntity,new() 
     {
